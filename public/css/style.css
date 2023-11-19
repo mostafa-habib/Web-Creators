@@ -72,13 +72,20 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 5px;
   transition: all 0.8s;
+}
+.header-container {
+  display: flex;
+  justify-content: space-around;
 }
 #menu.navbar-default {
   background-color: #fff;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  width: 60%;
+  margin: 1rem auto;
+  border-radius: 1.2rem;
 }
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
@@ -86,6 +93,7 @@ hr {
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
+  /* line-height: 27px; */
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
@@ -95,7 +103,7 @@ hr {
   font-weight: 400;
   padding: 8px 2px;
   border-radius: 0;
-  margin: 9px 20px 0;
+  margin: 9px 13px 0;
 }
 #menu.navbar-default .navbar-nav > li > a:after {
   display: block;
@@ -208,7 +216,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(../img/d3.jpg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -240,13 +248,15 @@ a:focus,
   margin-bottom: 60px;
 }
 header .intro-text {
-  padding-top: 350px;
+  padding-top: 480px;
   padding-bottom: 200px;
   text-align: center;
 }
 /* Features Section */
 #features {
   background: #f6f6f6;
+  /* padding: 10rem 6rem; */
+  /* width: 100%; */
 }
 #features i.fa {
   font-size: 38px;
@@ -262,7 +272,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-  padding: 100px 0;
+  padding: 10rem 0;
 }
 #about h3 {
   font-size: 22px;
@@ -309,7 +319,7 @@ header .intro-text {
 }
 /* Services Section */
 #services {
-  padding: 100px 0;
+  padding: 10rem 0;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: #fff;
 }
@@ -352,7 +362,7 @@ header .intro-text {
 }
 /* Portfolio Section */
 #portfolio {
-  padding: 100px 0;
+  padding: 10rem 0;
 }
 .portfolio-item {
   margin: 1px -15px 0 -14px;
@@ -401,7 +411,7 @@ header .intro-text {
 }
 /* Testimonials Section */
 #testimonials {
-  padding: 100px 0;
+  padding: 10rem 0;
   background: #f6f6f6;
 }
 #testimonials i {
@@ -441,7 +451,8 @@ header .intro-text {
 }
 /* Team Section */
 #team {
-  padding: 100px 0;
+  padding: 10rem 0;
+
 }
 #team h4 {
   margin: 5px 0;
@@ -459,7 +470,7 @@ header .intro-text {
 }
 /* Contact Section */
 #contact {
-  padding: 100px 0 60px;
+  padding: 10rem 0 60px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: rgba(255, 255, 255, 0.75);
 }
@@ -598,9 +609,30 @@ label {
 #footer a:hover {
   border-bottom: 2px solid #608dfd;
 }
+@media (max-width: 1200px) {
+  #menu.navbar-default {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  .intro h1 { 
+    font-size: 60px;
+  }
 
+}
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
   }
+  .header-container {
+    display: block;
+  }
+  #menu a.navbar-brand {
+    line-height: 20px;
+  }
+  .intro h1 { 
+    font-size: 50px;
+  }
 }
+
+
